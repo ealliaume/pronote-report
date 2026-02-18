@@ -27,7 +27,7 @@ jobs:
       - name: Run Pronote report
         env:
           PRONOTE_URL: ${{ vars.PRONOTE_URL }}
-          PRONOTE_USERNAME: ${{ vars.PRONOTE_USERNAME }}
+          PRONOTE_USERNAME: ${{ secrets.PRONOTE_USERNAME }}
           PRONOTE_PASSWORD: ${{ secrets.PRONOTE_PASSWORD }}
           GMAIL_ADDRESS: ${{ vars.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
